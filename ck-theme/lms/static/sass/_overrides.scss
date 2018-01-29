@@ -12,11 +12,16 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	color: #ffffff !important;
 }
 
-.left .list-inline .nav-global {
+.left .list-inline .nav-global, .header-global .nav-global {
 	float: right !important;
+	text-align: right !important;
 }
 
-.right .nav-courseware .list-inline, .btn .btn-login {
+.btn-neutral {
+	font-weight: normal !important;
+}
+
+.header-global .nav-courseware li .btn, .right .nav-courseware .list-inline, .btn .btn-login {
 	box-shadow: none !important;
 	font-weight: normal;
 	background-color: #ffffff !important;
@@ -84,7 +89,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 .col {
 	display:inline-block;
   margin: 10px;
-	width: 250px;
+	width: 300px;
 	vertical-align: top;
 	
 }
@@ -97,9 +102,9 @@ h1, h2, h3, h4, h5, h6 p, li, body {
     li{
     color: #a29c9a;
 	font-weight: lighter;
+	font-size: 14px;
     padding: .3em 0;
       a{
-        font-size: 12px;
         color: #a29c9a !important;
 		 font-weight: lighter;
         &:hover{
@@ -110,7 +115,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
       &:first-child{
 		color: #bfbfbf !important; 
 		text-transform:  uppercase;
-		  font-size: 14px;
+		  font-size: 16px;
       }
       &:last-child{
         margin-bottom: 2em;
