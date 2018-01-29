@@ -12,12 +12,13 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	color: #ffffff !important;
 }
 
-left list-inline nav-global {
+.left .list-inline .nav-global {
 	float: right !important;
 }
 
-.header-global .nav-courseware {
+.right .nav-courseware .list-inline, .btn .btn-login {
 	box-shadow: none !important;
+	font-weight: normal;
 	background-color: #ffffff !important;
 	color: #009edb !important;
 	border-color: #009edb !important;
@@ -94,19 +95,20 @@ left list-inline nav-global {
     list-style: none;
     margin-left: 1.5em;
     li{
-      color: #a29c9a;
-      padding: .3em 0;
+    color: #a29c9a;
+	font-weight: lighter;
+    padding: .3em 0;
       a{
         font-size: 12px;
         color: #a29c9a !important;
 		 font-weight: lighter;
         &:hover{
-          color: #a29c9a !important;
+          color: #e0e0e0 !important;
           text-decoration: none;
         }
       }
       &:first-child{
-		color: #a2a2a2 !important; 
+		color: #bfbfbf !important; 
 		text-transform:  uppercase;
 		  font-size: 14px;
       }
