@@ -6,13 +6,32 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 .header-global {
 	background-color: #242424;
 	border-bottom: none;
+
+
+	.row {
+	width: 100%;
+  	margin: 0 auto;
+  	position: relative;
+  	text-align:center;
+	vertical-align: top;
+	
 }
 
-.header-global .btn-neutral {
+
+.col {
+	display:inline-block;
+ 	 margin: 10px;
+	width: 300px;
+	vertical-align: top;
+	
+}
+
+
+.btn-neutral {
 	color: #ffffff !important;
 }
 
-.header-global .nav-global {
+.nav-global {
 	float: right !important;
 	text-align: right !important;
 }
@@ -21,7 +40,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	font-weight: normal !important;
 }
 
-.header-global .nav-courseware li .btn{
+.nav-courseware li .btn{
 	box-shadow: none !important;
 	font-weight: normal;
 	background-color: transparent!important;
@@ -37,8 +56,10 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 }
 
 
-.header-global h1.logo img {
+ h1.logo img {
 	max-height: 40px;
+}
+	
 }
 
 .home > header {
