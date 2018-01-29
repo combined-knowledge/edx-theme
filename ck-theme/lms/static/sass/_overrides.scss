@@ -1,6 +1,25 @@
 .header-global {
 	background-color: #242424;
+	border-bottom: none;
 }
+
+.header-global .btn-neutral {
+	color: #ffffff;
+}
+
+.header-global .left .list-inline .nav-global {
+	float: right;
+}
+
+.header-global .btn-login {
+	box-shadow: none;
+	background-color: #ffffff;
+	color: #009edb;
+	border-color: #009edb;
+	border-width: 2px;
+	border-bottom-style: solid;
+}
+
 
 .header-global h1.logo img {
 	max-height: 40px;
@@ -9,7 +28,7 @@
 .home > header {
 	background: url('../images/header_bg.jpg');
 	background-size: cover;
-	background-position: 50%;
+	background-position: 50% top;
 
 	.outer-wrapper {
 		padding-top: 150px;
@@ -28,6 +47,10 @@
 			color: #fff;
 		}
 	}
+}
+
+.course-date {
+	visibility: hidden;
 }
 
 //Footer
