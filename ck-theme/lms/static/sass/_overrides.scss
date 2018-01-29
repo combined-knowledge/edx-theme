@@ -6,9 +6,10 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 .header-global {
 	background-color: #242424;
 	border-bottom: none;
+}
 
 
-	.row {
+.header-global .row {
 	width: 100%;
   	margin: 0 auto;
   	position: relative;
@@ -18,7 +19,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 }
 
 
-.col {
+.header-global .col {
 	display:inline-block;
  	 margin: 10px;
 	width: 300px;
@@ -26,12 +27,11 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	
 }
 
-
-.btn-neutral {
+.header-global .btn-neutral {
 	color: #ffffff !important;
 }
 
-.nav-global {
+.header-global .nav-global {
 	float: right !important;
 	text-align: right !important;
 }
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	font-weight: normal !important;
 }
 
-.nav-courseware li .btn{
+.header-global .nav-courseware li .btn{
 	box-shadow: none !important;
 	font-weight: normal;
 	background-color: transparent!important;
@@ -56,10 +56,8 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 }
 
 
- h1.logo img {
+.header-global h1.logo img {
 	max-height: 40px;
-}
-	
 }
 
 .home > header {
