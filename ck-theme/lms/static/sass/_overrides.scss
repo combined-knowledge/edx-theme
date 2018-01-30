@@ -7,6 +7,7 @@ body{
   }
   .content-wrapper{
     max-width: none;
+	  padding-top: 0px !important;
   }
 }
 //Helper Classes
@@ -311,6 +312,7 @@ h1, h2, h3, h4, h5, h6{
 //Header
 header.header-main {
   min-height: 100px;
+	background-color: :$dark;
   .navbar-collapse{
     .collapsed-button{
       position: absolute;
@@ -393,8 +395,9 @@ header.header-main {
     right: 0;
     left: 0;
     background-color: $white;
+	  color: #ffffff;
     z-index: 10;
-    box-shadow: 0px 2px 3px $light;
+    // box-shadow: 0px 2px 3px $light;
     padding: 1rem 0;
     li{
       float: right;
