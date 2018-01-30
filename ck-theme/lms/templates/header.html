@@ -8,7 +8,10 @@ from django.core.urlresolvers import reverse
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 %>
 
-
+<style>
+  @import url("https://use.typekit.net/ruh6gmc.css");
+</style>
+	
 <header id="global-navigation" class="header-main" >
   <nav class="nav-wrapper" aria-label="${_('Global')}">
     <div class="grid-manual grid-container">
@@ -16,7 +19,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
           <div class="col col-6 sm-col-4 md-col-4 lg-col-3 xl-col-3">
             <div class="logo">
               <a href="${marketing_link('ROOT')}">
-                <img src="http://placehold.it/190x60" alt="Home Page" />
+                <img src="${static.url('images/logo.png')}" alt="Home Page" />
               </a>
             </div>
           </div>
@@ -25,7 +28,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
             <div class="collapsed-button">
               <span></span><span></span><span></span>
             </div>
-            <ul class="list-inline">
+            <ul class="list-inline pull-right">
               % if user.is_authenticated():
                 <%
                   username = user.username

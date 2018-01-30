@@ -96,9 +96,11 @@ h2{
   font-family: $brand-font;
   margin: 1.25rem 0;
   text-transform: none;
+	font-weight: lighter;	
 }
 h1, h2, h3, h4, h5, h6{
   font-family: $brand-font;
+	font-weight: lighter;
 }
 .col-centered{
   float: none !important;
