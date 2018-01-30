@@ -327,10 +327,7 @@ header.header-main {
         background-color: $x-dark;
         margin-bottom: 3px;
       }
-		header-link {
-			color: $white !important;
-			display: inline;
-      		margin: 0;
+
 			
 		}
     }
@@ -416,7 +413,7 @@ header.header-main {
       text-align: center;
       a{
         line-height: normal;
-        color: $x-dark;
+        color: $white;
       }
       &.user-account{
         margin-right: 1rem;
@@ -538,11 +535,11 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/header_bg.png") no-repeat 30% center !important;
+    background: url("../images/header_bg.jpg") no-repeat 30% center !important;
     background-size: cover !important;
   }
   &.hero-catalog{
-    background: url("../images/header_bg.png") no-repeat 30% center !important;
+    background: url("../images/header_bg.jpg") no-repeat 30% center !important;
     background-size: cover !important;
   }
   &.hero-video{
