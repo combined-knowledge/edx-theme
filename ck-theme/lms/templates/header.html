@@ -7,56 +7,41 @@ from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 %>
-
-
 <header id="global-navigation" class="header-global" >
-  <nav class="nav-wrapper" aria-label="${_('Global')}">
-    <div class="grid-manual grid-container">
-        <div  class="row">
-           <div class="logo">
-              <a href="${marketing_link('ROOT')}">
-                <img src="${static.url('images/logo.png')}" alt="Combined Knowledge"/>
-              </a>
-            </div>
-        <div class="col ">
-          <div class="navbar-collapse">
-            <div class="collapsed-button">
-              <span></span><span></span><span></span>
-            </div>
-            <ul class="list-inline">
-              % if user.is_authenticated():
-                <%
+<nav class="nav-wrapper" aria-label="${_('Global')}">
+<div class="grid-manual grid-container">
+
+	<div class="logo"> <a href="${marketing_link('ROOT')}"> <img src="${static.url('images/logo.png')}" alt="Combined Knowledge" class="header-logo"/> </a> </div>
+	
+<div  class="row">
+  <div class="col ">
+    <div class="navbar-collapse">
+      <div class="collapsed-button"> <span></span><span></span><span></span> </div>
+      <ul class="list-inline">
+        % if user.is_authenticated():
+        <%
                   username = user.username
                   profile_image_url = get_profile_image_urls_for_user(user)['medium']
                 %>
-                <li class="user-account">
-                  <span class="user-img"><img src="${profile_image_url}" alt=""></span>
-                  <span class="user-name">${username}</span>
-                  <ul>
-                    <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
-                    <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("Profile")}</a></li>
-                    <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>
-                    <li><a href="${reverse('logout')}">${_("Sign Out")}</a></li>
-                  </ul>
-                </li>
-              % else:
-              <li>
-                <a class="brand-link" href="/register${login_query()}">${_("Create Account")}</a>
-              </li>
-              <li>
-                <a href="/login${login_query()}" class="btn-brand btn-client">${_("Sign in")}</a>
-              </li>
-            % endif
-              <li>
-                <a href="/courses" class="brand-link">${_("View Courses")}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </nav>
+        <li class="user-account"> <span class="user-img"><img src="${profile_image_url}" alt=""></span> <span class="user-name">${username}</span>
+          <ul>
+            <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
+            <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("Profile")}</a></li>
+            <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>
+            <li><a href="${reverse('logout')}">${_("Sign Out")}</a></li>
+          </ul>
+        </li>
+        % else:
+        <li> <a class="brand-link" href="/register${login_query()}">${_("Create Account")}</a> </li>
+        <li> <a href="/login${login_query()}" class="btn-brand btn-client">${_("Sign in")}</a> </li>
+        % endif
+        <li> <a href="/courses" class="brand-link">${_("View Courses")}</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav>
 </header>
-
 <script>
   $( ".collapsed-button" ).click(function() {
     $(".navbar-collapse .list-inline").toggleClass("show-menu");
@@ -67,4 +52,4 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
   });
 
 
-</script>
+</script> 
