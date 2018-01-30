@@ -3,6 +3,38 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 	font-weight: lighter !important;
 }
 
+
+
+.pull-left{
+  float: left !important;
+}
+.pull-right{
+  float: right !important;
+}
+.block{
+  display: block;
+}
+.show-user-menu{
+  display: block !important;
+}
+
+
+a{
+  &:hover{
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  &:focus{
+    text-decoration: none;
+    outline: none;
+  }
+  &.brand-link{
+    color: # #009EDB;
+  }
+}
+
+
+
 .header-global {
 	background-color: #242424;
 	border-bottom: none;
