@@ -7,16 +7,16 @@ from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 %>
-	
-	
-<header id="global-navigation" class="header-global" >
+
+
+<header id="global-navigation" class="header-main" >
   <nav class="nav-wrapper" aria-label="${_('Global')}">
     <div class="grid-manual grid-container">
         <div  class="row">
           <div class="col col-6 sm-col-4 md-col-4 lg-col-3 xl-col-3">
             <div class="logo">
               <a href="${marketing_link('ROOT')}">
-                <img src="${static.url('images/logo.png')}" alt="Home Page" />
+                <img src="http://placehold.it/190x60" alt="Home Page" />
               </a>
             </div>
           </div>
@@ -58,8 +58,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
       </div>
       </nav>
 </header>
-	  
-	  
+
 <script>
   $( ".collapsed-button" ).click(function() {
     $(".navbar-collapse .list-inline").toggleClass("show-menu");
@@ -70,4 +69,4 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
   });
 
 
-</script> 
+</script>
