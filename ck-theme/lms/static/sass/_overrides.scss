@@ -540,7 +540,7 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/header_bg.jpg") no-repeat 80% center !important;
+    background: url("../images/header_bg.jpg") no-repeat top center !important;
     background-size: cover !important;
 	  text-align: center;
 	h1{
@@ -552,7 +552,7 @@ header.header-main {
 	  }
   }
   &.hero-catalog{
-    background: url("../images/header_bg.jpg") no-repeat 80% center !important;
+    background: url("../images/header_bg.jpg") no-repeat top center !important;
     background-size: cover !important;
   }
   &.hero-video{
@@ -563,7 +563,7 @@ header.header-main {
       position: absolute;
       right: 0;
       left: 0;
-      min-height: 22em;
+      min-height: 30%;
     }
 
     .grid-container{
