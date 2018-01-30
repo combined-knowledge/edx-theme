@@ -414,6 +414,10 @@ header.header-main {
       a{
         line-height: normal;
         color: $white;
+		  &:hover {
+			  color: $brand-color;
+		  }
+		  }
       }
       &.user-account{
         margin-right: 1rem;
@@ -537,10 +541,13 @@ header.header-main {
   &.hero-main{
     background: url("../images/header_bg.jpg") no-repeat 80% center !important;
     background-size: cover !important;
+	  text-align: center;
 	h1{
-            font-size: 5.5rem;
+            font-size: 3rem;
             color: $white;
 		text-align: center;
+		display: inline-block;
+		width: 80%
 	  }
   }
   &.hero-catalog{
