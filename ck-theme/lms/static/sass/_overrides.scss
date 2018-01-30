@@ -55,22 +55,27 @@ h1, h2, h3, h4, h5, h6 p, li, body {
         }
 }
 
+.header-global .logo {
+	float: left;
+}
 
 .header-global .logo img {
-	max-height: 40px;
+	max-height: 40px !important;
 }
+
+
 
 .header-global .list-inline{
     transition: all .2s;
     position: absolute;
     top: 100px;
     border-top: 1px solid $light;
-    right: 0;
-    left: 0;
+    float: right;
+	width: 70%;
     background-color: $white;
     z-index: 10;
     box-shadow: 0px 2px 3px $light;
-    padding: 1rem 0;
+    padding: 2% 0;
     li{
       float: right;
       display: inline-block;
