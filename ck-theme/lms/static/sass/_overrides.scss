@@ -537,6 +537,11 @@ header.header-main {
   &.hero-main{
     background: url("../images/header_bg.jpg") no-repeat 80% center !important;
     background-size: cover !important;
+	h1{
+            font-size: 5.5rem;
+            color: $white;
+		text-align: center;
+	  }
   }
   &.hero-catalog{
     background: url("../images/header_bg.jpg") no-repeat 80% center !important;
@@ -560,8 +565,8 @@ header.header-main {
           .data{
             padding: 7% 0 0 0;
             h1{
-            font-size: 5.5rem;
-            color: $white;
+            font-size: 1.5rem;
+            color: $black;
             line-height: normal;
             padding-left: 1rem;
             text-align: left;
