@@ -55,6 +55,7 @@ header.header-global {
         display: block;
         width: 25px;
         height:4px;
+		background-color: #000000;  
         margin-bottom: 3px;
       }
     }
@@ -201,6 +202,67 @@ header.header-global {
     }
   }
 }
+
+
+
+@media screen and (min-width: 48em){
+  .btn-enroll-mobile{
+    display: none;
+  }
+  header.header-main{
+    .logo a img {
+      height: 44px;
+    }
+    .collapsed-button{
+      display: none;
+    }
+    .navbar-collapse{
+      ul{
+        display: block;
+        transition: all .2s;
+        position: relative;
+        top: inherit;
+        right: inherit;
+        left: inherit;
+        border-top: 0;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        li{
+          width: auto;
+          text-align: left;
+          line-height: 100px;
+          padding: 0 0.9rem;
+          a{
+            &.btn-neutral{
+              padding: 0.625rem 1.25rem;
+            }
+          }
+          &.user-account{
+            ul{
+              position: absolute;
+              right: 1rem;
+              top: 100%;
+              width: 100%;
+              margin-top: -1rem;
+              li{
+                display: block;
+                float: none;
+                line-height: normal;
+                a{
+                  padding: 0.5rem;
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
 
 
 .home > header {
