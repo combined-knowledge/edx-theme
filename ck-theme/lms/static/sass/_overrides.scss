@@ -328,7 +328,9 @@ header.header-main {
         margin-bottom: 3px;
       }
 		header-link {
-			color: $white;
+			color: $white !important;
+			display: inline;
+      		margin: 0;
 			
 		}
     }
