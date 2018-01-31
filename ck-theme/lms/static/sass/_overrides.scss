@@ -405,6 +405,9 @@ header.header-main {
     background-color: $white;
 	  color: #ffffff;
     z-index: 10;
+	  .pull-right {
+		  width: 60% !important;
+	  }  
     // box-shadow: 0px 2px 3px $light;
     padding: 1rem 0;
     li{
