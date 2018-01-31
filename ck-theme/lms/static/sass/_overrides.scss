@@ -1381,7 +1381,7 @@ header.header-main {
 	  background-color: $dark;
 	  color: $light;
     .footer-logo{
-      text-align: left;
+      text-align: center;
 		img {
 			max-height: 60px;
 		}
@@ -1511,7 +1511,7 @@ header.header-main {
 @media screen and (min-width: 64em){ /* 980px */
   .footer-main {
     .footer-logo {
-      text-align: left;
+      text-align: center;
     }
   }
 }
@@ -1519,7 +1519,7 @@ header.header-main {
 @media screen and (min-width: 80em){
   .footer-main {
     .footer-logo {
-      text-align: left;
+      text-align: center;
     }
   }
 }
