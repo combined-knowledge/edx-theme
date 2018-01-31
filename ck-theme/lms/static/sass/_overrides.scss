@@ -561,9 +561,19 @@ header.header-main {
 	  }
   }
   &.hero-catalog{
-    background: url("../images/header_bg.jpg") no-repeat top center !important;
+
+    background: url("../images/header_bg.jpg") no-repeat center 20% !important;
     background-size: cover !important;
 	  text-align: center;
+	  padding-top: 5%;
+	  min-height: 440px;
+	h1{
+            font-size: 3rem;
+            color: $white;
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	  }
   }
   &.hero-video{
     background: none;
