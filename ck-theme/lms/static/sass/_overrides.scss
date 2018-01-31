@@ -689,7 +689,7 @@ header.header-main {
               border: 0;
               box-shadow: none;
               background-color: $white;
-              border-bottom: 6px solid $brand-color;
+              border-bottom: 6px solid $dark;
             }
           }
         }
@@ -1140,6 +1140,7 @@ header.header-main {
 	.row {
 	width: 100%;
   	margin: 0 auto;
+		display: block !important;
   	position: relative;
   	text-align:center;
 	vertical-align: top;
