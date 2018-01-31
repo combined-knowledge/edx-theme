@@ -314,6 +314,10 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 header.header-main {
   min-height: 100px;
 	background-color: $dark;
+	
+	.row {
+		    justify-content: space-between;
+	}
   .navbar-collapse{
     .collapsed-button{
       position: absolute;
