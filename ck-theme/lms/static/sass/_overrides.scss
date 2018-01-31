@@ -314,6 +314,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
 header.header-main {
   min-height: 100px;
 	background-color: $dark;
+	border-bottom: $brand-color 4px solid;
 		  .pull-right {
 		  width: 60% !important;
 	  } 
@@ -331,7 +332,7 @@ header.header-main {
         display: block;
         width: 25px;
         height:4px;
-        background-color: $white;
+        background-color: $brand-color;
         margin-bottom: 3px;
       }
 
@@ -706,7 +707,6 @@ header.header-main {
               border: 0;
               box-shadow: none;
               background-color: $white;
-              border-bottom: 6px solid $dark;
             }
           }
         }
