@@ -1186,7 +1186,7 @@ header.header-main {
     }
   }
   .footer-logo{
-    text-align: center;
+    text-align: center !important;
     img{
       margin-bottom: 1.5rem;
       width: auto;
@@ -1303,7 +1303,7 @@ header.header-main {
   }
   .footer-main{
     .footer-logo{
-      text-align: center;
+      text-align: center !important;
     }
   }
   .visible-mobile{
@@ -1381,7 +1381,7 @@ header.header-main {
 	  background-color: $dark;
 	  color: $light;
     .footer-logo{
-      text-align: center;
+      text-align: center !important;
 		img {
 			max-height: 60px;
 		}
@@ -1511,7 +1511,7 @@ header.header-main {
 @media screen and (min-width: 64em){ /* 980px */
   .footer-main {
     .footer-logo {
-      text-align: center;
+      text-align: center !important;
     }
   }
 }
@@ -1519,7 +1519,7 @@ header.header-main {
 @media screen and (min-width: 80em){
   .footer-main {
     .footer-logo {
-      text-align: center;
+      text-align: center !important;
     }
   }
 }
