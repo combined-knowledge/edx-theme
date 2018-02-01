@@ -789,6 +789,10 @@ header.header-main {
       background-color: $brand-color;
       color: $white;
     }
+	  &:focus {
+		background-color: $brand-color;
+      color: $white; 
+	  }
   }
 }
 
