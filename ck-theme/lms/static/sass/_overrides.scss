@@ -491,14 +491,14 @@ header.header-main {
 
 
   .btn-neutral{
-    border-color: $brand-color;
+    border-color: $brand-color !important;
     color: $brand-color !important;
     &:hover{
-      background-color: $brand-color;
+      background-color: $brand-color !important;
       color: $white !important;
     }
 	  &:focus {
-		background-color: $brand-color;
+		background-color: $brand-color !important;
       color: $white !important; 
 	  }
   }
