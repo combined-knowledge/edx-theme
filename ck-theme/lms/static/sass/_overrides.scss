@@ -489,6 +489,19 @@ header.header-main {
       }
     }
 
+
+  .btn-neutral{
+    border-color: $brand-color;
+    color: $brand-color;
+    &:hover{
+      background-color: $brand-color;
+      color: $white;
+    }
+	  &:focus {
+		background-color: $brand-color;
+      color: $white; 
+	  }
+  }
   
 
 
