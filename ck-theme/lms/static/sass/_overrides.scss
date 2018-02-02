@@ -20,6 +20,7 @@ body{
 	  .btn-neutral, .enter-course{
     border-color: $brand-color !important;
     color: $brand-color !important;
+	background-color: transparent !important;
     &:hover{
       background-color: $brand-color !important;
       color: $white !important;
