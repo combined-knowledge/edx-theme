@@ -14,23 +14,24 @@ body{
 	  }
   }
 	
+}
+
+
 	  .btn-neutral{
-    border-color: $brand-color;
-    color: $brand-color;
+    border-color: $brand-color !important;
+    color: $brand-color !important;
     &:hover{
-      background-color: $brand-color;
-      color: $white;
+      background-color: $brand-color !important;
+      color: $white !important;
     }
 	  &:focus {
-		background-color: $brand-color;
-      color: $white; 
+		background-color: $brand-color !important;
+      color: $white !important; 
 	  }
   }
 	.info-date-block {
-		display: none;
+		display: none !important¬;
 	}
-
-}
 
 
 //Helper Classes
