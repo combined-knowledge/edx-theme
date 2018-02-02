@@ -17,7 +17,7 @@ body{
 }
 
 
-	  .btn-neutral, enter-course{
+	  .btn-neutral, .enter-course{
     border-color: $brand-color !important;
     color: $brand-color !important;
     &:hover{
@@ -690,9 +690,9 @@ header.header-main {
 //Courses
 
 .course-container {
-	border-top: none;
-	border-left: none;
-	border-right: none;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
 	padding-bottom: 24px;
 	
 }
