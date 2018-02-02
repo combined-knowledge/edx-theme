@@ -17,7 +17,7 @@ body{
 }
 
 
-	  .btn-neutral{
+	  .btn-neutral, enter-course{
     border-color: $brand-color !important;
     color: $brand-color !important;
     &:hover{
@@ -117,11 +117,11 @@ a{
   padding: 0 1.25rem;
 }
 h2, .header-courses{
-  font-size: 1.5rem;
-  font-family: $brand-font;
-  margin: 1.25rem 0;
-  text-transform: none;
-	font-weight: lighter;	
+  font-size: 1.5rem !important;
+  font-family: $brand-font !;
+  margin: 1.25rem 0 !important;
+  text-transform: none !important;
+	font-weight: lighter !important;	
 }
 h1, h2, h3, h4, h5, h6 p, li, body {
 	font-family: "proxima-nova", sans-serif !important;
@@ -688,6 +688,14 @@ header.header-main {
 }
 
 //Courses
+
+.course-container {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-bottom: 24px;
+	
+}
 .courses-section {
   background-color: $course-section-background-color;
   .courses-container {
