@@ -9,8 +9,30 @@ body{
     max-width: none;
 	  padding-top: 0px !important;
 	  padding-bottom: 0px !important;
+	  .container {
+		  border: none;
+	  }
   }
+	
+	  .btn-neutral{
+    border-color: $brand-color;
+    color: $brand-color;
+    &:hover{
+      background-color: $brand-color;
+      color: $white;
+    }
+	  &:focus {
+		background-color: $brand-color;
+      color: $white; 
+	  }
+  }
+	.info-date-block {
+		display: none;
+	}
+
 }
+
+
 //Helper Classes
 
 .pull-left{
@@ -93,7 +115,7 @@ a{
 .inner-container{
   padding: 0 1.25rem;
 }
-h2{
+h2, .header-courses{
   font-size: 1.5rem;
   font-family: $brand-font;
   margin: 1.25rem 0;
@@ -1262,6 +1284,7 @@ header.header-main {
 %shopping_cart_btn {
   background: $brand-color !important;
   border-color: $brand-color !important;
+  color: $white !important;;
   box-shadow: none;
   font-weight: normal;
   text-shadow: none;
@@ -1291,6 +1314,10 @@ header.header-main {
   .wrapper-find-courses {
     margin-top: 66px;
   }
+	.my-courses {
+		float: none;
+		margin: 0 auto;
+	}
 }
 
 // Courseware
