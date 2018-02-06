@@ -291,8 +291,19 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-8">
 
- ${HTML(course_details.overview)}
-			  
+            <h2> Course Description</h2>
+            <div class="course-description">
+              <p>${course_details.description}</p>
+            </div>
+
+            <h2> What you'll learn</h2>
+            <div class="course-learning">
+              <ul class="list-bulleted">
+                % for item in course_details.learning_info:
+                  <li>${item}</li>
+                %endfor
+              </ul>
+            </div>
           </div>
           % if can_enroll and not is_course_full:
           <div class="col col-12 sm-col-12 md-col-4 pull-right extras">
@@ -323,7 +334,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
           </div>
           % endif
         </div>
-		  
         <div class="col col-12"><h2>Instructors</h2></div>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
@@ -363,8 +373,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       </div>
     </div>
   </div>
-		
-<!--  <div class="light-bg course-about">
+  <div class="light-bg course-about">
     <div class="grid-manual grid-container">
       <div class="inner-container">
         <div class="row">
@@ -374,8 +383,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         </div>
       </div>
     </div>
-  </div>-->
-		
+  </div>
 </section>
 
 <section class="about-section">
