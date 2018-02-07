@@ -24,8 +24,9 @@ body{
 	width: 100%;
 }
 
-.teacher img {
+.teacher-image img {
 	display: block;
+	margin-right: 24px;
 }
 
 
@@ -299,6 +300,7 @@ h1, h2, h3, h4, h5, h6 p, li, body {
        margin-right: 0 !important;
        .instructor-data{
          display: block;
+		   margin-right: 24px;
          .thumbnail{
            display: block;
            width: 100%;
