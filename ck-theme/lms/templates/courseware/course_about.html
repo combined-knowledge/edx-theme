@@ -168,7 +168,9 @@ from openedx.core.djangolib.js_utils import js_escaped_string
           <div class="col col-12 sm-col-12 md-col-8 lg-col-8 xl-col-8 description">
             <div class="data">
               <h1>${course_details.title or course.display_name}</h1>
-              <p>${course_details.subtitle}</p>
+              % if course_details.subtitle
+				<p>${course_details.subtitle}</p>
+				% endif
             </div>
           </div>
         </div>

@@ -671,9 +671,9 @@ header.header-main {
         .description{
           .data{
             padding: 7% 0 0 0;
-			  .data, .description{
-				  vertical-align: middle;
-			  }
+			vertical-align: middle;
+			  margin-top: 0;
+			  margin-bottom: 0;
 			  h1{
             font-size: 1.5rem;
             color: $black;
