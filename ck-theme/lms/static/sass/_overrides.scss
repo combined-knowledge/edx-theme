@@ -674,10 +674,9 @@ header.header-main {
 			  margin-top: 0;
 			  margin-bottom: 0;
           .data{
-            padding: 7% 0 0 0;
+            padding: 0 !important;
 			vertical-align: middle;
 			  height: 100%;
-			  padding-top: 0;
 			  margin-top: 0;
 			  margin-bottom: 0;
 			  h1{
@@ -687,9 +686,18 @@ header.header-main {
             padding-left: 1rem;
             text-align: left;
 			vertical-align: middle;
+			display: inline-block !important;
               span{
                 display: block;
               }
+				  // Fix course title to appear vertical middle of hero
+				  &:before {
+					content: '';
+				  display: inline-block;
+				  height: 100%;
+				  vertical-align: middle;
+				  margin-right: -0.25em; /* Adjusts for spacing */
+				  }
             }
             p{
                 font-size: 1rem;
