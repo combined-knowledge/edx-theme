@@ -673,26 +673,22 @@ header.header-main {
 			  vertical-align: middle;
 			  margin-top: 0;
 			  margin-bottom: 0;
+			display: flex;
           .data{
             padding: 0 !important;
 			vertical-align: middle;
-			  height: 100%;
 			  margin-top: 0;
 			  margin-bottom: 0;
+			  align-items: center;
 			  h1{
-            height: 100%;
-			font-size: 1.5rem;
+            font-size: 1.5rem;
             color: $black;
-            line-height: 100%;
+            line-height: normal;
             padding-left: 1rem;
             text-align: left;
-			display: inline-block !important;
-              span{
+			 span{
                 display: block;
               }
-				  // Fix course title to appear vertical middle of hero
-				
-            }
             p{
                 font-size: 1rem;
                 padding-left: 1rem;
