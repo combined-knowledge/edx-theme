@@ -36,6 +36,7 @@ body{
     border-color: $brand-color !important;
     color: $brand-color !important;
 	background-color: transparent !important;
+		  border-radius: 0;
     &:hover{
       background-color: $brand-color !important;
       color: $white !important;
