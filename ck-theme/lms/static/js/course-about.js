@@ -4,7 +4,7 @@
 
     require([
         'edx-ui-toolkit/js/utils/html-utils',
-        '/static/example/js/leanModal.js'
+        '/static/ck-theme/js/leanModal.js'
     ], function(HtmlUtils) { // eslint-disable-line no-unused-vars // jshint ignore:line
         function expandDescription(entireDescriptionContent) {
             var showLessLinkHtml = '<a id="description_less" href="#" class="brand-link">Less</a>';
