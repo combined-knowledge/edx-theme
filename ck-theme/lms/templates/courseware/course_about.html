@@ -294,6 +294,9 @@ from openedx.core.djangolib.js_utils import js_escaped_string
           <div class="col col-4">
             <a href="${btn_href}" id="${btn_id}" class="btn-block btn-success btn-large btn-enroll ${btn_class}">
               ${_(btn_text)}
+				
+				<script>console.log('Reg then ad to cart link', <% reg_then_add_to_cart_link %>);
+				</script>
             </a>
           </div>
         </div>
