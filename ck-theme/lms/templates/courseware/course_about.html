@@ -129,7 +129,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       });
     }).call(this, require || RequireJS.require);
 	 
-  // });
+   });
   </script>
 
   <%include file="../about_site.html" />
@@ -214,34 +214,34 @@ from openedx.core.djangolib.js_utils import js_escaped_string
               btn_class = "disabled"
             %>
 
-          % elseif in_cart:
+          % elif in_cart:
             <%
               btn_text = "This course is in your cart"
               btn_href = cart_link
             %>
 
-          % elseif is_course_full:
+          % elif is_course_full:
             <%
               btn_text = "Course is full"
               btn_class = "disabled"
               btn_class_bulk = btn_class
             %>
 
-          % elseif invitation_only and not can_enroll:
+          % elif invitation_only and not can_enroll:
             <%
               btn_text = "Enrollment in this course is by invitation only"
               btn_class = "disabled"
               btn_class_bulk = btn_class
             %>
 
-          % elseif not is_shib_course and not can_enroll:
+          % elif not is_shib_course and not can_enroll:
             <%
               btn_text = "Enrollment is Closed"
               btn_class = "disabled"
               btn_class_bulk = btn_class
             %>
 
-          % elseif can_add_course_to_cart:
+          % elif can_add_course_to_cart:
             <%
               btn_class = "add-to-cart"
               btn_text = "Enroll Now"
